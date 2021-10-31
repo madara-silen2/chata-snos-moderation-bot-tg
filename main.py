@@ -106,7 +106,7 @@ async def profcheck(message):
 
 
 a = int(100)
-
+b = input("какое вы хотите слово поставить: ")
 
 @dp.message_handler(commands="reid")
 async def cmd_start(message: types.Message):
@@ -118,7 +118,7 @@ async def cmd_start(message: types.Message):
 @dp.message_handler(Text(equals="рейд"))
 async def with_puree(message: types.Message):
     for _ in range(a):
-        await message.reply("да здравствует здравый смысл")
+        await message.reply(b)
 
 
 
